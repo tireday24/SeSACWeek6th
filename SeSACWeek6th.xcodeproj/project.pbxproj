@@ -14,6 +14,8 @@
 		810B29D028A1F37E00E6FFE8 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 810B29CE28A1F37E00E6FFE8 /* CardCollectionViewCell.xib */; };
 		810B29D228A1F63400E6FFE8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810B29D128A1F63400E6FFE8 /* MainViewController.swift */; };
 		810B29D428A1FC2500E6FFE8 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810B29D328A1FC2500E6FFE8 /* MainTableViewCell.swift */; };
+		81652DB828A3306F0061AD3A /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81652DB728A3306F0061AD3A /* ReusableViewProtocol.swift */; };
+		81652DBA28A343E60061AD3A /* TMDBAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81652DB928A343E60061AD3A /* TMDBAPIManager.swift */; };
 		81CFA17028A08FE500A05426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CFA16F28A08FE500A05426 /* AppDelegate.swift */; };
 		81CFA17228A08FE500A05426 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CFA17128A08FE500A05426 /* SceneDelegate.swift */; };
 		81CFA17428A08FE500A05426 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CFA17328A08FE500A05426 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 		810B29CE28A1F37E00E6FFE8 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CardCollectionViewCell.xib; path = SeSACWeek6th/CardCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 		810B29D128A1F63400E6FFE8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		810B29D328A1FC2500E6FFE8 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainTableViewCell.swift; path = SeSACWeek6th/MainTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		81652DB728A3306F0061AD3A /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
+		81652DB928A343E60061AD3A /* TMDBAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBAPIManager.swift; sourceTree = "<group>"; };
 		81CFA16C28A08FE500A05426 /* SeSACWeek6th.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSACWeek6th.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81CFA16F28A08FE500A05426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81CFA17128A08FE500A05426 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81652DB628A330590061AD3A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				81652DB728A3306F0061AD3A /* ReusableViewProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		81CFA16328A08FE500A05426 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +101,7 @@
 		81CFA16E28A08FE500A05426 /* SeSACWeek6th */ = {
 			isa = PBXGroup;
 			children = (
+				81652DB628A330590061AD3A /* Protocol */,
 				81CFA18328A08FF400A05426 /* View */,
 				81CFA19428A0948400A05426 /* Network */,
 				81CFA16F28A08FE500A05426 /* AppDelegate.swift */,
@@ -124,6 +137,7 @@
 				81CFA19528A0949D00A05426 /* Endpoint.swift */,
 				81CFA19728A0951500A05426 /* URL+Extension.swift */,
 				81CFA19928A0A79300A05426 /* KakaoAPIManger.swift */,
+				81652DB928A343E60061AD3A /* TMDBAPIManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -223,7 +237,9 @@
 				81CFA17228A08FE500A05426 /* SceneDelegate.swift in Sources */,
 				810B29C828A1E03300E6FFE8 /* SeSACButton.swift in Sources */,
 				81CFA19628A0949D00A05426 /* Endpoint.swift in Sources */,
+				81652DB828A3306F0061AD3A /* ReusableViewProtocol.swift in Sources */,
 				81CFA19A28A0A79300A05426 /* KakaoAPIManger.swift in Sources */,
+				81652DBA28A343E60061AD3A /* TMDBAPIManager.swift in Sources */,
 				81CFA19828A0951500A05426 /* URL+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

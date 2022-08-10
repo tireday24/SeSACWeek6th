@@ -18,7 +18,16 @@ class CardCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        print("CardCollectionViewCell", #function)
+        
         setupUI()
+    }
+    
+    //override는 항상 부모 클래스가 따라 다닌다
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        cardView.contentLabel.text = "A"
     }
     
     //셀이 만들어지는 순간에만 호출 재사용때는 호출X

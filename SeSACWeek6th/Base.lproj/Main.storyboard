@@ -89,14 +89,14 @@
         <scene sceneID="8dX-hz-HOQ">
             <objects>
                 <viewController storyboardIdentifier="ClosureViewController" id="hQ5-u8-sDu" customClass="ClosureViewController" customModule="SeSACWeek6th" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LQV-dn-5GS" customClass="CardView" customModule="SeSACWeek6th" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="vht-xN-nwB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSj-aB-29M" customClass="SeSACButton" customModule="SeSACWeek6th" customModuleProvider="target">
-                                <rect key="frame" x="50" y="144" width="314" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmn-FM-dOs" customClass="SeSACButton" customModule="SeSACWeek6th" customModuleProvider="target">
+                                <rect key="frame" x="16" y="120" width="382" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="MbF-TU-DPw"/>
+                                    <constraint firstAttribute="height" constant="60" id="v7J-i6-4Sx"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -112,21 +112,21 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="backgrouundColorChanged:" destination="hQ5-u8-sDu" eventType="touchUpInside" id="Sad-OI-1S2"/>
+                                    <action selector="backgrouundColorChanged:" destination="hQ5-u8-sDu" eventType="touchUpInside" id="tQM-mS-j45"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cg-DW-lvt">
-                                <rect key="frame" x="50" y="224" width="314" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lyc-MD-lzY">
+                                <rect key="frame" x="16" y="188" width="382" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="PvB-G8-IBI"/>
+                                    <constraint firstAttribute="height" constant="60" id="HIb-ZK-Y9f"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQ1-1q-88G" customClass="SeSACButton" customModule="SeSACWeek6th" customModuleProvider="target">
-                                <rect key="frame" x="50" y="64" width="314" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqk-IS-i0g" customClass="SeSACButton" customModule="SeSACWeek6th" customModuleProvider="target">
+                                <rect key="frame" x="16" y="52" width="382" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="9Qb-5z-GVK"/>
+                                    <constraint firstAttribute="height" constant="60" id="ACA-iz-vel"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -142,41 +142,47 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="colorPickerButtonClicked:" destination="hQ5-u8-sDu" eventType="touchUpInside" id="kKY-BL-RTu"/>
+                                    <action selector="colorPickerButtonClicked:" destination="hQ5-u8-sDu" eventType="touchUpInside" id="Qts-cM-bmq"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ho5-NF-PMd" customClass="CardView" customModule="SeSACWeek6th" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJo-yQ-4c8" customClass="CardView" customModule="SeSACWeek6th" customModuleProvider="target">
                                 <rect key="frame" x="157" y="398" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="KOa-ga-5Kz"/>
-                                    <constraint firstAttribute="width" constant="100" id="yRw-Ag-x4q"/>
+                                    <constraint firstAttribute="width" constant="100" id="77T-zW-xFj"/>
+                                    <constraint firstAttribute="height" constant="100" id="O7w-7e-9y9"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7i6-dt-Z1R">
+                                <rect key="frame" x="87" y="809" width="240" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="IYJ-Ed-Dnm"/>
+                        <viewLayoutGuide key="safeArea" id="Ils-bc-yPL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="IYJ-Ed-Dnm" firstAttribute="trailing" secondItem="9cg-DW-lvt" secondAttribute="trailing" constant="50" id="BBp-NJ-s8y"/>
-                            <constraint firstItem="ho5-NF-PMd" firstAttribute="centerY" secondItem="LQV-dn-5GS" secondAttribute="centerY" id="FAg-jr-da6"/>
-                            <constraint firstItem="UQ1-1q-88G" firstAttribute="leading" secondItem="IYJ-Ed-Dnm" secondAttribute="leading" constant="50" id="O7N-Ie-t83"/>
-                            <constraint firstItem="IYJ-Ed-Dnm" firstAttribute="trailing" secondItem="hSj-aB-29M" secondAttribute="trailing" constant="50" id="VxQ-AA-VoY"/>
-                            <constraint firstItem="9cg-DW-lvt" firstAttribute="leading" secondItem="IYJ-Ed-Dnm" secondAttribute="leading" constant="50" id="WGY-wS-3E0"/>
-                            <constraint firstItem="IYJ-Ed-Dnm" firstAttribute="trailing" secondItem="UQ1-1q-88G" secondAttribute="trailing" constant="50" id="cxe-RF-UX8"/>
-                            <constraint firstItem="hSj-aB-29M" firstAttribute="leading" secondItem="IYJ-Ed-Dnm" secondAttribute="leading" constant="50" id="dOC-p5-4aX"/>
-                            <constraint firstItem="UQ1-1q-88G" firstAttribute="top" secondItem="IYJ-Ed-Dnm" secondAttribute="top" constant="20" id="lEL-6P-9NY"/>
-                            <constraint firstItem="hSj-aB-29M" firstAttribute="top" secondItem="UQ1-1q-88G" secondAttribute="bottom" constant="20" id="m3T-XP-Jb7"/>
-                            <constraint firstItem="9cg-DW-lvt" firstAttribute="top" secondItem="hSj-aB-29M" secondAttribute="bottom" constant="20" id="pOV-9x-EuB"/>
-                            <constraint firstItem="ho5-NF-PMd" firstAttribute="centerX" secondItem="LQV-dn-5GS" secondAttribute="centerX" id="xp0-7k-2Jy"/>
+                            <constraint firstItem="Ils-bc-yPL" firstAttribute="trailing" secondItem="Bmn-FM-dOs" secondAttribute="trailing" constant="16" id="0yH-yE-JFf"/>
+                            <constraint firstItem="Ils-bc-yPL" firstAttribute="trailing" secondItem="Lyc-MD-lzY" secondAttribute="trailing" constant="16" id="BGA-tO-hM2"/>
+                            <constraint firstItem="Lyc-MD-lzY" firstAttribute="leading" secondItem="Ils-bc-yPL" secondAttribute="leading" constant="16" id="Cyt-66-pQE"/>
+                            <constraint firstItem="Bmn-FM-dOs" firstAttribute="top" secondItem="oqk-IS-i0g" secondAttribute="bottom" constant="8" id="Jf8-4S-ZTN"/>
+                            <constraint firstItem="oqk-IS-i0g" firstAttribute="top" secondItem="Ils-bc-yPL" secondAttribute="top" constant="8" id="NLF-be-QlT"/>
+                            <constraint firstItem="Bmn-FM-dOs" firstAttribute="leading" secondItem="Ils-bc-yPL" secondAttribute="leading" constant="16" id="TYV-GQ-ObS"/>
+                            <constraint firstItem="Lyc-MD-lzY" firstAttribute="top" secondItem="Bmn-FM-dOs" secondAttribute="bottom" constant="8" id="Vku-qC-Ld0"/>
+                            <constraint firstItem="oqk-IS-i0g" firstAttribute="leading" secondItem="Ils-bc-yPL" secondAttribute="leading" constant="16" id="aQg-K5-HZF"/>
+                            <constraint firstItem="Ils-bc-yPL" firstAttribute="trailing" secondItem="oqk-IS-i0g" secondAttribute="trailing" constant="16" id="md0-uP-zYx"/>
+                            <constraint firstItem="YJo-yQ-4c8" firstAttribute="centerY" secondItem="vht-xN-nwB" secondAttribute="centerY" id="oNu-tG-ERD"/>
+                            <constraint firstItem="YJo-yQ-4c8" firstAttribute="centerX" secondItem="vht-xN-nwB" secondAttribute="centerX" id="qG1-Sa-6tf"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cardView" destination="LQV-dn-5GS" id="T9i-LO-iVb"/>
+                        <outlet property="cardView" destination="YJo-yQ-4c8" id="yFH-wa-9Zi"/>
+                        <outlet property="orangView" destination="7i6-dt-Z1R" id="o0C-ve-YPy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dVJ-TE-rtz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2438" y="117"/>
+            <point key="canvasLocation" x="2437.68115942029" y="116.51785714285714"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="IKS-SP-If0">
@@ -307,16 +313,19 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="UQ1-1q-88G">
+        <designable name="Bmn-FM-dOs">
             <size key="intrinsicContentSize" width="67" height="31"/>
         </designable>
-        <designable name="hSj-aB-29M">
+        <designable name="oqk-IS-i0g">
             <size key="intrinsicContentSize" width="67" height="31"/>
         </designable>
     </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
