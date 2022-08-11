@@ -81,6 +81,7 @@ class MainViewController: UIViewController {
 }
 
 //하나의 프로토콜, 메서드에서 여러 컬랙션뷰의 delegate, datasource 구현해야 함
+//UICollectionViewDelegateFlowLayout 역동적인 셀 => sizeForItemAt
 extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -159,7 +160,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 240
+        return 240 * 3
     }
     
 }
