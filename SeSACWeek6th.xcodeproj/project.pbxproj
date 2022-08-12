@@ -14,6 +14,8 @@
 		810B29D028A1F37E00E6FFE8 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 810B29CE28A1F37E00E6FFE8 /* CardCollectionViewCell.xib */; };
 		810B29D228A1F63400E6FFE8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810B29D128A1F63400E6FFE8 /* MainViewController.swift */; };
 		810B29D428A1FC2500E6FFE8 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810B29D328A1FC2500E6FFE8 /* MainTableViewCell.swift */; };
+		813BBB7228A5D89500750120 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 813BBB7128A5D89500750120 /* YPImagePicker */; };
+		813BBB7428A5DD1A00750120 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BBB7328A5DD1A00750120 /* CameraViewController.swift */; };
 		81652DB828A3306F0061AD3A /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81652DB728A3306F0061AD3A /* ReusableViewProtocol.swift */; };
 		81652DBA28A343E60061AD3A /* TMDBAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81652DB928A343E60061AD3A /* TMDBAPIManager.swift */; };
 		818AA6DE28A4939B001E4281 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818AA6DD28A4939B001E4281 /* MapViewController.swift */; };
@@ -42,6 +44,7 @@
 		810B29CE28A1F37E00E6FFE8 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CardCollectionViewCell.xib; path = SeSACWeek6th/CardCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 		810B29D128A1F63400E6FFE8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		810B29D328A1FC2500E6FFE8 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainTableViewCell.swift; path = SeSACWeek6th/MainTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		813BBB7328A5DD1A00750120 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		81652DB728A3306F0061AD3A /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
 		81652DB928A343E60061AD3A /* TMDBAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBAPIManager.swift; sourceTree = "<group>"; };
 		818AA6DD28A4939B001E4281 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 				81CFA18F28A0903F00A05426 /* Kingfisher in Frameworks */,
 				81CFA18928A0902300A05426 /* SwiftyJSON in Frameworks */,
 				81CFA18628A0901800A05426 /* Alamofire in Frameworks */,
+				813BBB7228A5D89500750120 /* YPImagePicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +114,7 @@
 				81CFA17128A08FE500A05426 /* SceneDelegate.swift */,
 				81CFA17328A08FE500A05426 /* ViewController.swift */,
 				81CFA17528A08FE500A05426 /* Main.storyboard */,
+				813BBB7328A5DD1A00750120 /* CameraViewController.swift */,
 				818AA6DD28A4939B001E4281 /* MapViewController.swift */,
 				810B29D128A1F63400E6FFE8 /* MainViewController.swift */,
 				81CFA17828A08FE600A05426 /* Assets.xcassets */,
@@ -165,6 +170,7 @@
 				81CFA18528A0901800A05426 /* Alamofire */,
 				81CFA18828A0902300A05426 /* SwiftyJSON */,
 				81CFA18E28A0903F00A05426 /* Kingfisher */,
+				813BBB7128A5D89500750120 /* YPImagePicker */,
 			);
 			productName = SeSACWeek6th;
 			productReference = 81CFA16C28A08FE500A05426 /* SeSACWeek6th.app */;
@@ -198,6 +204,7 @@
 				81CFA18428A0901800A05426 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				81CFA18728A0902300A05426 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				81CFA18D28A0903F00A05426 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				813BBB7028A5D89500750120 /* XCRemoteSwiftPackageReference "YPImagePicker" */,
 			);
 			productRefGroup = 81CFA16D28A08FE500A05426 /* Products */;
 			projectDirPath = "";
@@ -232,6 +239,7 @@
 				810B29D428A1FC2500E6FFE8 /* MainTableViewCell.swift in Sources */,
 				81CFA17428A08FE500A05426 /* ViewController.swift in Sources */,
 				81CFA17028A08FE500A05426 /* AppDelegate.swift in Sources */,
+				813BBB7428A5DD1A00750120 /* CameraViewController.swift in Sources */,
 				81CFA19C28A0ABF400A05426 /* ClosureViewController.swift in Sources */,
 				810B29D228A1F63400E6FFE8 /* MainViewController.swift in Sources */,
 				810B29CF28A1F37E00E6FFE8 /* CardCollectionViewCell.swift in Sources */,
@@ -464,6 +472,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		813BBB7028A5D89500750120 /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yummypets/YPImagePicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		81CFA18428A0901800A05426 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -491,6 +507,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		813BBB7128A5D89500750120 /* YPImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 813BBB7028A5D89500750120 /* XCRemoteSwiftPackageReference "YPImagePicker" */;
+			productName = YPImagePicker;
+		};
 		81CFA18528A0901800A05426 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 81CFA18428A0901800A05426 /* XCRemoteSwiftPackageReference "Alamofire" */;
