@@ -20,7 +20,7 @@ class LocationAPI {
     func callRequest(latitudinalMeters: Double, longitudinalMeters: Double, completionHandler: @escaping (LocationInfomation) -> ()) {
         print(#function)
         
-        let url = APIURL.kakaoLocationURL + "x=\(latitudinalMeters)&y=\(longitudinalMeters)&input_coord=WGS84"
+        let url = "\(APIURL.kakaoLocationURL)x=\(latitudinalMeters)&y=\(longitudinalMeters)"
         
         AF.request(url, method: .get, headers: header).validate().responseData { response in
             switch response.result {

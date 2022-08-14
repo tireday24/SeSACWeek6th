@@ -88,16 +88,11 @@ class WeatherViewController: UIViewController {
     }
     
     func currentTimeSet() {
-        currentTime = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.currentTimeSetting), userInfo: nil, repeats: true)
-    }
-    
-    @objc func currentTimeSetting() {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MM. dd(E) HH:mm a"
-        formatter.amSymbol = "AM"
-        formatter.pmSymbol = "PM"
-        formatter.locale = Locale(identifier: "ko")
-        currentTimeLable.text = formatter.string(from: Date())
+        let date = DateFormatter()
+        date.dateFormat = "MM월 dd일 hh시 mm분"
+        date.locale = Locale(identifier: "ko_KR")
+        let currentDate = Date()
+        currentTimeLable.text = date.string(from: currentDate)
     }
     
 }
