@@ -19,6 +19,13 @@
 		81652DB828A3306F0061AD3A /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81652DB728A3306F0061AD3A /* ReusableViewProtocol.swift */; };
 		81652DBA28A343E60061AD3A /* TMDBAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81652DB928A343E60061AD3A /* TMDBAPIManager.swift */; };
 		818AA6DE28A4939B001E4281 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818AA6DD28A4939B001E4281 /* MapViewController.swift */; };
+		8192696D28A87D3000B28867 /* LocationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192696C28A87D3000B28867 /* LocationAPI.swift */; };
+		8192697028A881DB00B28867 /* LocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192696F28A881DB00B28867 /* LocationInfo.swift */; };
+		8192697228A8841600B28867 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192697128A8841600B28867 /* WeatherAPI.swift */; };
+		8192697428A887C000B28867 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192697328A887C000B28867 /* WeatherInfo.swift */; };
+		8192697728A88F0500B28867 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192697628A88F0400B28867 /* WeatherViewController.swift */; };
+		8192697928A88F0E00B28867 /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8192697828A88F0E00B28867 /* Weather.storyboard */; };
+		8192697B28A8B76E00B28867 /* WeatherStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192697A28A8B76E00B28867 /* WeatherStatus.swift */; };
 		81CFA17028A08FE500A05426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CFA16F28A08FE500A05426 /* AppDelegate.swift */; };
 		81CFA17228A08FE500A05426 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CFA17128A08FE500A05426 /* SceneDelegate.swift */; };
 		81CFA17428A08FE500A05426 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CFA17328A08FE500A05426 /* ViewController.swift */; };
@@ -48,6 +55,13 @@
 		81652DB728A3306F0061AD3A /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
 		81652DB928A343E60061AD3A /* TMDBAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBAPIManager.swift; sourceTree = "<group>"; };
 		818AA6DD28A4939B001E4281 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8192696C28A87D3000B28867 /* LocationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAPI.swift; sourceTree = "<group>"; };
+		8192696F28A881DB00B28867 /* LocationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfo.swift; sourceTree = "<group>"; };
+		8192697128A8841600B28867 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
+		8192697328A887C000B28867 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		8192697628A88F0400B28867 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		8192697828A88F0E00B28867 /* Weather.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Weather.storyboard; sourceTree = "<group>"; };
+		8192697A28A8B76E00B28867 /* WeatherStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStatus.swift; sourceTree = "<group>"; };
 		81CFA16C28A08FE500A05426 /* SeSACWeek6th.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSACWeek6th.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81CFA16F28A08FE500A05426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81CFA17128A08FE500A05426 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +101,44 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		8192696A28A87CDC00B28867 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				8192697528A88EDB00B28867 /* WeatherVC */,
+				8192696B28A87D0000B28867 /* WeatherAPIManager */,
+				8192696E28A881B700B28867 /* InfoStruct */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		8192696B28A87D0000B28867 /* WeatherAPIManager */ = {
+			isa = PBXGroup;
+			children = (
+				8192696C28A87D3000B28867 /* LocationAPI.swift */,
+				8192697128A8841600B28867 /* WeatherAPI.swift */,
+			);
+			path = WeatherAPIManager;
+			sourceTree = "<group>";
+		};
+		8192696E28A881B700B28867 /* InfoStruct */ = {
+			isa = PBXGroup;
+			children = (
+				8192696F28A881DB00B28867 /* LocationInfo.swift */,
+				8192697328A887C000B28867 /* WeatherInfo.swift */,
+				8192697A28A8B76E00B28867 /* WeatherStatus.swift */,
+			);
+			path = InfoStruct;
+			sourceTree = "<group>";
+		};
+		8192697528A88EDB00B28867 /* WeatherVC */ = {
+			isa = PBXGroup;
+			children = (
+				8192697628A88F0400B28867 /* WeatherViewController.swift */,
+				8192697828A88F0E00B28867 /* Weather.storyboard */,
+			);
+			path = WeatherVC;
+			sourceTree = "<group>";
+		};
 		81CFA16328A08FE500A05426 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +159,7 @@
 		81CFA16E28A08FE500A05426 /* SeSACWeek6th */ = {
 			isa = PBXGroup;
 			children = (
+				8192696A28A87CDC00B28867 /* Weather */,
 				81652DB628A330590061AD3A /* Protocol */,
 				81CFA18328A08FF400A05426 /* View */,
 				81CFA19428A0948400A05426 /* Network */,
@@ -220,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8192697928A88F0E00B28867 /* Weather.storyboard in Resources */,
 				81CFA19128A090CA00A05426 /* .gitignore in Resources */,
 				81CFA17C28A08FE600A05426 /* LaunchScreen.storyboard in Resources */,
 				810B29CA28A1E60100E6FFE8 /* CardView.xib in Resources */,
@@ -243,16 +297,22 @@
 				81CFA19C28A0ABF400A05426 /* ClosureViewController.swift in Sources */,
 				810B29D228A1F63400E6FFE8 /* MainViewController.swift in Sources */,
 				810B29CF28A1F37E00E6FFE8 /* CardCollectionViewCell.swift in Sources */,
+				8192696D28A87D3000B28867 /* LocationAPI.swift in Sources */,
 				81CFA19328A0911200A05426 /* APIKey.swift in Sources */,
 				810B29CC28A1E64400E6FFE8 /* CardView.swift in Sources */,
+				8192697028A881DB00B28867 /* LocationInfo.swift in Sources */,
 				81CFA17228A08FE500A05426 /* SceneDelegate.swift in Sources */,
 				810B29C828A1E03300E6FFE8 /* SeSACButton.swift in Sources */,
 				81CFA19628A0949D00A05426 /* Endpoint.swift in Sources */,
+				8192697428A887C000B28867 /* WeatherInfo.swift in Sources */,
+				8192697B28A8B76E00B28867 /* WeatherStatus.swift in Sources */,
 				81652DB828A3306F0061AD3A /* ReusableViewProtocol.swift in Sources */,
 				81CFA19A28A0A79300A05426 /* KakaoAPIManger.swift in Sources */,
 				81652DBA28A343E60061AD3A /* TMDBAPIManager.swift in Sources */,
+				8192697228A8841600B28867 /* WeatherAPI.swift in Sources */,
 				81CFA19828A0951500A05426 /* URL+Extension.swift in Sources */,
 				818AA6DE28A4939B001E4281 /* MapViewController.swift in Sources */,
+				8192697728A88F0500B28867 /* WeatherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

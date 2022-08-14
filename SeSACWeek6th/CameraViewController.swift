@@ -107,6 +107,7 @@ class CameraViewController: UIViewController {
         
         if let image = resultImage.image {
             UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+           
         }
         
     }

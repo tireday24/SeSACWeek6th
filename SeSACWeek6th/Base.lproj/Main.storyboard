@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hno-Vr-HOa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hQ5-u8-sDu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -347,7 +347,7 @@
                                     <constraint firstAttribute="height" constant="50" id="es8-v6-QvY"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="갤러리"/>
+                                <buttonConfiguration key="configuration" style="plain" title="기본 카메라"/>
                                 <connections>
                                     <action selector="cameraButtonClicked:" destination="Hno-Vr-HOa" eventType="touchUpInside" id="ZlD-Rl-azt"/>
                                 </connections>
@@ -358,7 +358,7 @@
                                     <constraint firstAttribute="height" constant="50" id="aFH-hf-kSS"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="사진 저장"/>
+                                <buttonConfiguration key="configuration" style="plain" title="갤러리"/>
                                 <connections>
                                     <action selector="photoLibraryButtonClicked:" destination="Hno-Vr-HOa" eventType="touchUpInside" id="KmF-9c-gxx"/>
                                 </connections>
@@ -370,18 +370,18 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAW-ei-Lcd">
-                                <rect key="frame" x="157" y="590" width="67" height="31"/>
+                                <rect key="frame" x="20" y="444" width="374" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="hUQ-vx-PL6"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="사진 저장"/>
                                 <connections>
                                     <action selector="saveToPhotoLibrary:" destination="Hno-Vr-HOa" eventType="touchUpInside" id="iYV-1j-Yba"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeM-iJ-6Sh">
-                                <rect key="frame" x="157" y="695" width="67" height="31"/>
+                                <rect key="frame" x="20" y="514" width="374" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="og9-k8-qKQ"/>
                                 </constraints>

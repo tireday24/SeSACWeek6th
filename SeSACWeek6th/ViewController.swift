@@ -63,9 +63,12 @@ class ViewController: UIViewController {
             
             print(json)
             
-            for item in json["documents"].arrayValue {
-                self.blogList.append(item["contents"].stringValue)
-            }
+//            for item in json["documents"].arrayValue {
+//                self.blogList.append(item["contents"].stringValue)
+//            }
+            let item = json["documents"].arrayValue.map{ $0["contents"].stringValue}
+            self.blogList.append(contentsOf: item)
+            
             self.searchCafe()
         }
     }
@@ -75,13 +78,16 @@ class ViewController: UIViewController {
             
             print(json)
             
-            for item in json["documents"].arrayValue {
-                
-                let value = item["contents"].stringValue.replacingOccurrences(of: "<b>", with: "").replacingOccurrences(of: "</b>", with: "")
-                
-                
-                self.cafeList.append(value)
-            }
+//            for item in json["documents"].arrayValue {
+//
+//                let value = item["contents"].stringValue.replacingOccurrences(of: "<b>", with: "").replacingOccurrences(of: "</b>", with: "")
+//
+//
+//                self.cafeList.append(value)
+//            }
+            let item = json["documents"].arrayValue.map{$0["contents"].stringValue.replacingOccurrences(of: "<b>", with: "").replacingOccurrences(of: "</b>", with: "")}
+            self.cafeList.append(contentsOf: item)
+            
             print(self.blogList)
             print(self.cafeList)
             
