@@ -9,6 +9,7 @@ import Foundation
 
 import Alamofire
 import SwiftyJSON
+import CoreLocation
 
 class LocationAPI {
     static var shared = LocationAPI()
@@ -20,15 +21,16 @@ class LocationAPI {
     func callRequest(latitudinalMeters: Double, longitudinalMeters: Double, completionHandler: @escaping (LocationInfomation) -> ()) {
         print(#function)
         
-        let url = "\(APIURL.kakaoLocationURL)x=\(latitudinalMeters)&y=\(longitudinalMeters)"
-        
+        let url = "\(APIURL.kakaoLocationURL)?x=\(latitudinalMeters)&y=\(longitudinalMeters)&input_coord=WGS84"
+       
         AF.request(url, method: .get, headers: header).validate().responseData { response in
             switch response.result {
             case .success(let value):
                 
                 let json = JSON(value)
-                
+                //왜 안나오냐 ㅠ
                 let addressName = json["documents"][0]["address_name"].stringValue
+                print(addressName, "gggggggggg")
                 
                 completionHandler(LocationInfomation(addressName: addressName))
                 

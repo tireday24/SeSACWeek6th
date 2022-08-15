@@ -189,6 +189,8 @@ extension WeatherViewController: CLLocationManagerDelegate {
             LocationAPI.shared.callRequest(latitudinalMeters: latitude, longitudinalMeters: longitude) { location in
                 //"\(location.region1), \(location.region2), \(location.region3)"
                 self.currentLocationLabel.text = "\(location.addressName)"
+                print(self.latitude, "aaaaaa")
+                print(self.longitude, "bbbbbb")
             }
             
             WeatherAPI.shared.callRequest(lat: latitude, lon: longitude) { weather in
