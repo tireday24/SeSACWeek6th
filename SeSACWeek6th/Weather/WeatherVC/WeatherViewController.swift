@@ -128,9 +128,9 @@ extension WeatherViewController {
             print("DENIED, 아이폰 설정으로 유도")
             showRequestLocationServiceAlert()
             
-            self.locationImageView.image = UIImage(systemName: "location.fill")
+            self.locationImageView.image = UIImage(systemName: "location")
             
-            LocationAPI.shared.callRequest(latitudinalMeters: latitude, longitudinalMeters: longitude) { location in
+            LocationAPI.shared.callRequest(lat: latitude, lon: longitude) { location in
                 //"\(location.region1), \(location.region2), \(location.region3)"
                 self.currentLocationLabel.text = "\(location.addressName)"
             }
@@ -186,7 +186,7 @@ extension WeatherViewController: CLLocationManagerDelegate {
             
             self.locationImageView.image = UIImage(systemName: "location.fill")
             
-            LocationAPI.shared.callRequest(latitudinalMeters: latitude, longitudinalMeters: longitude) { location in
+            LocationAPI.shared.callRequest(lat: latitude, lon: longitude) { location in
                 //"\(location.region1), \(location.region2), \(location.region3)"
                 self.currentLocationLabel.text = "\(location.addressName)"
                 print(self.latitude, "aaaaaa")

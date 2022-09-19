@@ -147,6 +147,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         
         print("MainViewController", #function, indexPath)
         
+        
+        
         cell.backgroundColor = .yellow
         cell.titleLabel.text = "\(TMDBAPIManager.shared.tvList[indexPath.section].0) 드라마 다시 보기"
         cell.contentCollectionView.backgroundColor = .lightGray

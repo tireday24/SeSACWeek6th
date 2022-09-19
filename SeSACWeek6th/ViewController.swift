@@ -34,13 +34,15 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var blogList: [String] = []
-    var cafeList: [String] = []
+    private var blogList: [String] = []
+    private var cafeList: [String] = []
     
-    var isExpanded = false //false 2줄, true 0으로
+    private var isExpanded = false //false 2줄, true 0으로
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let user = User() // 다른 파일에서 Private 인스턴스 썼는데 왜 오류 안나? => struct 자체는 Internal 범주가 큰 것을 봐야함 초기화 구문까지는 상관 없음
         
         //실행 순서 start => end -> json
         //viewdidload에서 보여줘야 하는 의무가 있음 네트워크 통신을 하는 동안 화면띄움 까만화면 보여주면 안돼서 그 후에 response 띄움
@@ -58,7 +60,7 @@ class ViewController: UIViewController {
     
     }
     
-    func searchBlog() {
+    private func searchBlog() {
         KakaoAPIManager.shared.callRequest(type: .blog, query: "고래밥") { json in
             
             print(json)

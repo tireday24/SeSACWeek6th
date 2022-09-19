@@ -18,10 +18,10 @@ class LocationAPI {
     
     let header: HTTPHeaders = ["Authorization": "KakaoAK \(APIKey.kakao)"]
     
-    func callRequest(latitudinalMeters: Double, longitudinalMeters: Double, completionHandler: @escaping (LocationInfomation) -> ()) {
+    func callRequest(lat: Double, lon: Double, completionHandler: @escaping (LocationInfomation) -> ()) {
         print(#function)
         
-        let url = "\(APIURL.kakaoLocationURL)?x=\(latitudinalMeters)&y=\(longitudinalMeters)&input_coord=WGS84"
+        let url = "\(APIURL.kakaoLocationURL)x=\(lat)&y=\(lon)&input_coord=WGS84"
        
         AF.request(url, method: .get, headers: header).validate().responseData { response in
             switch response.result {
